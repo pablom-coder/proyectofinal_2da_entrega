@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_desarrollo_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablom-coder/proyectofinal_2da_entrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablom-coder/proyectofinal_2da_entrega/issues"
+  },
+  "homepage": "https://github.com/pablom-coder/proyectofinal_2da_entrega#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

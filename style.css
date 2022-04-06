@@ -1,480 +1,319 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+h1 {
+  color: #7baa0f;
+}
 
-* {
-    margin: 2px;
-    padding: 0px;
-    box-sizing: border-box;
+h3 {
+  text-align: justify;
+  color: #7baa0f;
 }
-.contenedor_servicios{
-    display: flex;
-    flex-flow: column nowrap;
-    
+
+p {
+  color: #f34040a6;
 }
+
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    background-color: rgb(255, 255, 236);
-    display: flex;
-    flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #ffffec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-
-    /* .menu{
-        display: flex;
-        flex-flow: nowrap;
-
-        background: black;
-    }
-        li {
-            display: inline;
-            padding: 15px;
-            margin-right: 20px;           
-        }
-
-        li:hover {
-            background-color: white;
-        }
-
-        li:hover a {
-            color: black;
-        }
-
-        ul {            
-            padding: 15px;                 
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        } */
-    
-        footer {
-            display: flex;
-            flex-flow: nowrap;
-            flex-direction:column;
-            background-color: #222;
-            border-radius: 5px;
-            padding-left: 20px;
-            box-shadow: 2px 3px 1px gray;
-            text-align: center;
-            color: white;
-        }        
-            .blue {
-                color: blue;
-            }
-/*------------------------------------------SERVICIOS-----------------------------------------*/
-/* 
-    header{
-        grid-area: header;
-    }
-    section#mapa{
-        grid-area: mapa;
-    }
-    section#contacto{
-        grid-area: contacto;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0px 0px 200px;
-        align-items: start;
-    }
-        .titulo-formulario{
-            padding:20px ;
-        }
-        h3{
-            font-size: 14px;
-        }
-        
-    section#datos-contacto{
-        grid-area: datos-contacto;
-        text-align: start;
-        padding: 20px 0px 0px 10px;
-    }
-        .titulo-datos-contacto{
-            padding: 10px;
-        }
-
-    footer {
-        grid-area: footer;
-    } */
-
-    .contenedor-servicios{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 0.5fr 3fr 0.2fr;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";        
-        }   
-/* section#datos-contacto
-section_servicios{
-
-} */
-        .titulo-servicios{
-            font-size: 22px;
-        }
-        
-     
-    .servicios{
-        display: flex;
-        flex-flow:row wrap;
-        justify-content: space-evenly;        
-    }
-
-        .servicio {
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
-            margin: 20px;
-            margin-top: 60px;
-            height: 500px;
-            width: 300px;            
-        }
-            h3 {
-                font-size: 14px;
-                color:black;
-               
-            }
-            /* .servicio img {
-                width: 100%;
-            } */
-            p {
-                font-weight: bold;
-                text-align: center;
-            }
-            .servicio img{
-                width: 280px;
-                height: 160px;
-                background-size: cover;
-            }
-            .caracteristicas{
-                display: flex;
-                flex-direction: column;
-                list-style-type:circle;                
-            }
-
-
-
-/* ------------------ PROYECTOS -----------------------------------*/
-.agrupa-proyectos{
-
-    padding-bottom: 3em;
-    padding-top: 1em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-        "img1 img1 img2 img2"
-        "img1 img1 img2 img2"
-        "img3 img3 img4 img4"
-        "img3 img3 img4 img4"
-        "img5 img5 img6 img6"
-        "img5 img5 img6 img6";
-    
-    grid-auto-rows: 160px;
-    gap: .8em;
-}
-.titulo_proyecto{
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 20px 0;
-}
-.proyectos_picture{
-    position: relative;
-    cursor:pointer;
-    overflow: hidden;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #222;
+  border-radius: 5px;
+  padding-left: 20px;
+  -webkit-box-shadow: 2px 3px 1px gray;
+          box-shadow: 2px 3px 1px gray;
+  text-align: center;
+  color: white;
 }
 
-.proyectos_picture::before{
-    content: "Soluciones Hidraulicas";
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #5b40f3a6;
-    transform: scale(0);
-    transition: transform .4s;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
+.blue {
+  color: blue;
 }
 
-.proyectos_picture:hover::before{
-    transform: scale(1) rotate(360deg);
+.contenedor-index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
+  grid-auto-rows: 10% 80% 10%;
+      grid-template-areas: "header header" "main aside" "footer footer";
 }
 
-.proyectos_picture--g1{
-    grid-area: img1;
-}
-.proyectos_picture--g2{
-    grid-area: img2;
-}
-.proyectos_picture--g3{
-    grid-area: img3;
-}
-.proyectos_picture--g4{
-    grid-area: img4;
-}
-.proyectos_picture--g5{
-    grid-area: img5;
-}
-.proyectos_picture--g6{
-    grid-area: img6;
-}
-.proyectos_img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
 }
 
+.main_index {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
 
-/* ------------------ INDEX -----------------------------------*/
+aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: aside;
+}
 
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
 
-.contenedor-index{
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-auto-rows: 10% 80% 10%;
-    grid-template-areas: 
-    "header header"
-    "main aside"
-    "footer footer";        
-    }   
-    header{
-        grid-area: header;
-    }
+.inicio {
+  padding: 40px 0px 0px 20px;
+}
 
-    .main_index {
-        grid-area: main;
-    }
+h3 {
+  font-size: 16px;
+  line-height: 2;
+  text-align: justify;
+  font-weight: 300;
+}
 
-    aside{
-        grid-area: aside;
-    }
+.contenedor-imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-    footer {
-        grid-area: footer;
-    }
+.img-card {
+  height: 400px;
+  width: 200px;
+  padding: 5px;
+  margin: 20px;
+}
 
-    .inicio{
-        padding: 40px 0px 0px 20px;     
-        
-    }
-        /* .titulo-inicio{
-            animation-name: animaciontitulo;
-            animation-duration: 8s;
-            position: relative;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-        }
-        @keyframes animaciontitulo{
-            0% {left:0px;}
-            25% {left: 150px;}
-            50% {left: 300px;}
-            75% {left: 530px;}
-            100% {left: 0px;}
-        } */
-        h3{
-            font-size: 16px;
-            line-height: 2;
-            text-align: justify;
-            font-weight: 300;           
-        }
-            
-    .contenedor-imagen{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-        .img-card{
-            height: 400px;
-            width: 200px;
-            padding: 5px;
-            margin: 20px;
-        }
-        .img-card img {
-            height: 350spx;
-            width: 230px;    
-        }
-    
-    
-    
+.img-card img {
+  height: 350spx;
+  width: 230px;
+}
 
 /* ------------------ NOSOTROS -----------------------------------*/
-    
-.contenedor-nosotros{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 0.5fr 3fr 0.2fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";        
-    }   
-    header{
-        grid-area: header;
-    }
-
-    .main-nosotros {
-        grid-area: main;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-    
-        .agrupa-nosotros{
-            display: flex;
-        }
-
-        .titulo-nosotros{
-            font-size: 20px;
-            padding: 10px 0px 10px 120px;     
-
-        }
-
-        .nosotros {
-                    
-            
-            display: flex;
-            flex:2 1 60%;
-            flex-direction: column;
-            padding: 20px 0px 0px 120px;
-        }
-            .nosotros img{
-                height: 50%;
-                width: 80%; 
-                border: 3px solid gray;
-            }
-
-            .nosotros h3{
-                
-                padding-top: 10px;
-
-            }
-
-        .areas-proyecto{
-            display: flex;
-            flex: 1 1 40%;
-            flex-direction: column;
-            padding-top: 50px;
-            padding-left: 10px;
-        }
-            .areas-proyecto h2{
-                text-align: left;
-            }
-            .area-proyecto-texto{
-                padding: 20px 20px 0px 20px;
-            }
-
-/* ------------------ CONTACTO -----------------------------------*/
-
-.contenedor-contacto{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 0.5fr 2fr 2fr 0.2fr;
-    grid-template-areas: 
-    "header header"
-    "mapa mapa"
-    "contacto datos-contacto"
-    "footer footer";        
-    }   
-    header{
-        grid-area: header;
-    }
-    section#mapa{
-        grid-area: mapa;
-    }
-    section#contacto{
-        grid-area: contacto;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0px 0px 200px;
-        align-items: start;
-    }
-        .titulo-formulario{
-            padding:20px ;
-        }
-        h3{
-            font-size: 14px;
-        }
-        
-    section#datos-contacto{
-        grid-area: datos-contacto;
-        text-align: start;
-        padding: 20px 0px 0px 10px;
-    }
-        .titulo-datos-contacto{
-            padding: 10px;
-        }
-
-    footer {
-        grid-area: footer;
-    }
-
-
-/* ------------------------------------------------------*/
-
-@media screen and (min-width:481px) and (max-width:671px){
-.menu{
-    font-size: 14px;
-    }
-    .menu li{
-        padding: 0px;
-        margin-right: 5px; 
-    }
-    .titulo_proyecto{
-        font-size: 20px;
-        padding: 10px 0px;
-    }
-}
-    
-@media screen and (max-width:480px){
-    header {
-        height: 300px;
-    }
-        .menu{
-            font-size: 14px;
-        }
-            li {
-                padding: 0px;
-                margin-right: 5px;           
-            }
-   
-    .agrupa-proyectos{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "img1 img1"
-        "img1 img1"
-        "img2 img3"
-        "img4 img4"
-        "img5 img5"
-        "img5 img5"
-        "img6 img6";
-    } 
-    .titulo_proyecto{
-        font-size: 18px;
-        padding: 5px 0px;
-    }
+.contenedor-nosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-auto-rows: 0.5fr 3fr 0.2fr;
+      grid-template-areas: "header" "main" "footer";
 }
 
-@media screen and (max-width:600px){
-.contenedor-index{
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr auto auto 0.2fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "aside"
-    "footer";        
-    }
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
 }
 
-/* ------------------------------------------*/
+.main-nosotros {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
 
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.agrupa-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.titulo-nosotros {
+  font-size: 20px;
+  padding: 10px 0px 10px 120px;
+}
+
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 60%;
+          flex: 2 1 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0px 0px 120px;
+}
+
+.nosotros img {
+  height: 50%;
+  width: 80%;
+  border: 3px solid gray;
+}
+
+.nosotros h3 {
+  padding-top: 10px;
+}
+
+.areas-proyecto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.areas-proyecto h2 {
+  text-align: left;
+}
+
+.area-proyecto-texto {
+  padding: 20px 20px 0px 20px;
+}
+
+/* ------------------ PROYECTOS -----------------------------------*/
+.agrupa-proyectos {
+  padding-bottom: 3em;
+  padding-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "img1 img1 img2 img2" "img1 img1 img2 img2" "img3 img3 img4 img4" "img3 img3 img4 img4" "img5 img5 img6 img6" "img5 img5 img6 img6";
+  grid-auto-rows: 160px;
+  gap: .8em;
+}
+
+.titulo_proyecto {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 20px 0;
+}
+
+.proyectos_picture {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.proyectos_picture::before {
+  content: "Soluciones Hidraulicas";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5b40f3a6;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+}
+
+.proyectos_picture:hover::before {
+  -webkit-transform: scale(1) rotate(360deg);
+          transform: scale(1) rotate(360deg);
+}
+
+.proyectos_picture--g1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img1;
+}
+
+.proyectos_picture--g2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: img2;
+}
+
+.proyectos_picture--g3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img3;
+}
+
+.proyectos_picture--g4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: img4;
+}
+
+.proyectos_picture--g5 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img5;
+}
+
+.proyectos_picture--g6 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: img6;
+}
+
+.proyectos_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

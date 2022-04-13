@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction:column;
+    background-color: #222;
+    border-radius: 5px;
+    padding-left: 20px;
+    box-shadow: 2px 3px 1px gray;
+    text-align: center;
+    color: white;
+    .p {
+        color: blue;
+    }
+}        
+    

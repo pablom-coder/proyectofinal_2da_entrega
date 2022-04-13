@@ -1,0 +1,28 @@
+
+$variables-disenio:(
+    d-flex:flex,
+    d-grid:grid,
+    font-h3:16px,
+    jc-center:center,
+    ta-align:justify,
+);
+
+@mixin th3($font-size, $line-height, $font-weight) {
+    font-size: $font-size;
+    line-height:$line-height;
+    font-weight:$font-weight;
+}
+
+
+%flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%card{
+    height: 400px;
+    width: 200px;
+    padding: 5px;
+    margin: 20px;
+}

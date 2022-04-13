@@ -1,14 +1,33 @@
-h1 {
-  color: #7baa0f;
+.contenedor-index .contenedor-imagen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-h3 {
-  text-align: justify;
-  color: #7baa0f;
+.contenedor-index .contenedor-imagen .img-card {
+  height: 400px;
+  width: 200px;
+  padding: 5px;
+  margin: 20px;
 }
 
-p {
-  color: #f34040a6;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +41,61 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contenedor-index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
+  grid-auto-rows: 10% 80% 10%;
+      grid-template-areas: "header header" "main aside" "footer footer";
+}
+
+.contenedor-index .main_index {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.contenedor-index .main_index .inicio {
+  padding: 40px 0px 0px 20px;
+}
+
+.contenedor-index .main_index .inicio h3 {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.contenedor-index .contenedor-imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor-index .contenedor-imagen .img-card img {
+  height: 350spx;
+  width: 230px;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: aside;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
 }
 
 footer {
@@ -43,83 +117,10 @@ footer {
   color: white;
 }
 
-.blue {
+footer .p {
   color: blue;
 }
 
-.contenedor-index {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 75% 25%;
-      grid-template-columns: 75% 25%;
-  grid-auto-rows: 10% 80% 10%;
-      grid-template-areas: "header header" "main aside" "footer footer";
-}
-
-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-}
-
-.main_index {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
-}
-
-aside {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: aside;
-}
-
-footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-}
-
-.inicio {
-  padding: 40px 0px 0px 20px;
-}
-
-h3 {
-  font-size: 16px;
-  line-height: 2;
-  text-align: justify;
-  font-weight: 300;
-}
-
-.contenedor-imagen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.img-card {
-  height: 400px;
-  width: 200px;
-  padding: 5px;
-  margin: 20px;
-}
-
-.img-card img {
-  height: 350spx;
-  width: 230px;
-}
-
-/* ------------------ NOSOTROS -----------------------------------*/
 .contenedor-nosotros {
   display: -ms-grid;
   display: grid;
@@ -141,24 +142,18 @@ header {
   grid-area: main;
 }
 
-footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
+.main-nosotros .titulo-nosotros {
+  font-size: 20px;
+  padding: 10px 0px 10px 120px;
 }
 
-.agrupa-nosotros {
+.main-nosotros .agrupa-nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.titulo-nosotros {
-  font-size: 20px;
-  padding: 10px 0px 10px 120px;
-}
-
-.nosotros {
+.main-nosotros .agrupa-nosotros .nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,17 +167,21 @@ footer {
   padding: 20px 0px 0px 120px;
 }
 
-.nosotros img {
+.main-nosotros .agrupa-nosotros .nosotros .nosotros img {
   height: 50%;
   width: 80%;
   border: 3px solid gray;
 }
 
-.nosotros h3 {
+.main-nosotros .agrupa-nosotros .nosotros h3 {
   padding-top: 10px;
+  line-height: 2;
+  text-align: justify;
+  text-align: 16px;
+  font-weight: 300;
 }
 
-.areas-proyecto {
+.main-nosotros .agrupa-nosotros .areas-proyecto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,15 +196,24 @@ footer {
   padding-left: 10px;
 }
 
-.areas-proyecto h2 {
+.main-nosotros .agrupa-nosotros h2 {
   text-align: left;
 }
 
-.area-proyecto-texto {
+.main-nosotros .agrupa-nosotros h3 {
   padding: 20px 20px 0px 20px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 300;
 }
 
-/* ------------------ PROYECTOS -----------------------------------*/
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
 .agrupa-proyectos {
   padding-bottom: 3em;
   padding-top: 1em;
@@ -218,19 +226,13 @@ footer {
   gap: .8em;
 }
 
-.titulo_proyecto {
-  text-align: center;
-  font-size: 2.5rem;
-  padding: 20px 0;
-}
-
-.proyectos_picture {
+.agrupa-proyectos .proyectos_picture {
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
 
-.proyectos_picture::before {
+.agrupa-proyectos .proyectos_picture::before {
   content: "Soluciones Hidraulicas";
   position: absolute;
   top: 0;
@@ -257,12 +259,12 @@ footer {
   font-size: 1.2rem;
 }
 
-.proyectos_picture:hover::before {
+.agrupa-proyectos .proyectos_picture:hover::before {
   -webkit-transform: scale(1) rotate(360deg);
           transform: scale(1) rotate(360deg);
 }
 
-.proyectos_picture--g1 {
+.agrupa-proyectos .proyectos_picture--g1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -270,7 +272,7 @@ footer {
   grid-area: img1;
 }
 
-.proyectos_picture--g2 {
+.agrupa-proyectos .proyectos_picture--g2 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -278,7 +280,7 @@ footer {
   grid-area: img2;
 }
 
-.proyectos_picture--g3 {
+.agrupa-proyectos .proyectos_picture--g3 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -286,7 +288,7 @@ footer {
   grid-area: img3;
 }
 
-.proyectos_picture--g4 {
+.agrupa-proyectos .proyectos_picture--g4 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -294,7 +296,7 @@ footer {
   grid-area: img4;
 }
 
-.proyectos_picture--g5 {
+.agrupa-proyectos .proyectos_picture--g5 {
   -ms-grid-row: 5;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -302,7 +304,7 @@ footer {
   grid-area: img5;
 }
 
-.proyectos_picture--g6 {
+.agrupa-proyectos .proyectos_picture--g6 {
   -ms-grid-row: 5;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -310,7 +312,7 @@ footer {
   grid-area: img6;
 }
 
-.proyectos_img {
+.agrupa-proyectos .proyectos_img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

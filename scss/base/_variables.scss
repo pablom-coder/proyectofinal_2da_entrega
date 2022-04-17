@@ -5,13 +5,16 @@ $variables-disenio:(
     font-h3:16px,
     jc-center:center,
     ta-align:justify,
+    tl-align:left,
 );
 
-@mixin th3($font-size, $line-height, $font-weight) {
+@mixin p_h3($font-size, $line-height, $font-weight) {
     font-size: $font-size;
     line-height:$line-height;
     font-weight:$font-weight;
 }
+
+
 
 
 %flex{
@@ -21,8 +24,8 @@ $variables-disenio:(
 }
 
 %card{
-    height: 400px;
-    width: 200px;
+    height: 300px;
+    width: 150px;
     padding: 5px;
     margin: 20px;
 }

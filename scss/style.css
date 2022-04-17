@@ -12,8 +12,8 @@
 }
 
 .contenedor-index .contenedor-imagen .img-card {
-  height: 400px;
-  width: 200px;
+  height: 300px;
+  width: 150px;
   padding: 5px;
   margin: 20px;
 }
@@ -46,9 +46,9 @@ body {
 .contenedor-index {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 75% 25%;
-      grid-template-columns: 75% 25%;
-  grid-auto-rows: 10% 80% 10%;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  grid-auto-rows: 10% auto 10%;
       grid-template-areas: "header header" "main aside" "footer footer";
 }
 
@@ -62,11 +62,13 @@ body {
   padding: 40px 0px 0px 20px;
 }
 
-.contenedor-index .main_index .inicio h3 {
+.contenedor-index .main_index .inicio p {
   font-size: 16px;
   line-height: 2;
   font-weight: 300;
-  text-align: justify;
+  text-align: left;
+  margin-bottom: 1em;
+  padding-left: 40px;
 }
 
 .contenedor-index .contenedor-imagen {
@@ -173,12 +175,13 @@ header {
   border: 3px solid gray;
 }
 
-.main-nosotros .agrupa-nosotros .nosotros h3 {
-  padding-top: 10px;
+.main-nosotros .agrupa-nosotros .nosotros p {
+  font-size: 16px;
   line-height: 2;
-  text-align: justify;
-  text-align: 16px;
   font-weight: 300;
+  text-align: left;
+  margin-bottom: 1em;
+  padding-left: 40px;
 }
 
 .main-nosotros .agrupa-nosotros .areas-proyecto {
@@ -200,18 +203,32 @@ header {
   text-align: left;
 }
 
-.main-nosotros .agrupa-nosotros h3 {
-  padding: 20px 20px 0px 20px;
-  text-align: justify;
+.main-nosotros .agrupa-nosotros p {
   font-size: 16px;
-  line-height: 2;
+  line-height: 0;
   font-weight: 300;
+  text-align: left;
+  margin-bottom: 1em;
+  padding-left: 40px;
+  padding: 20px 20px 0px 20px;
 }
 
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
+}
+
+@media screen and (max-width: 480px) {
+  .agrupa-nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .agrupa-proyectos {
@@ -317,5 +334,10 @@ footer {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.titulo-servicios {
+  font-size: 22px;
+  padding: 10px 0px 10px 0px;
 }
 /*# sourceMappingURL=style.css.map */

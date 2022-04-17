@@ -1,7 +1,7 @@
 .contenedor-index {
     display: map-get($variables-disenio, d-grid);
-    grid-template-columns: 75% 25%;
-    grid-auto-rows: 10% 80% 10%;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows: 10% auto 10%;
     grid-template-areas:
         "header header"
         "main aside"
@@ -13,13 +13,11 @@
         .inicio {
             padding: 40px 0px 0px 20px;
 
-            h3 {
-                @include th3(16px,2,300);
-                // font-size: 16px;
-                // line-height: 2;
-                // font-weight: 300;
-                text-align:map-get($variables-disenio , ta-align);
-                // text-align: justify;
+            p {
+                @include p_h3(16px,2,300);
+                text-align:map-get($variables-disenio , tl-align);
+                margin-bottom: 1em;
+                padding-left: 40px;
                 
             }
         }
@@ -28,9 +26,6 @@
     .contenedor-imagen {
         display: map-get($variables-disenio,d-flex);
         @extend %flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
 
         .img-card {
             @extend %card;
@@ -50,13 +45,9 @@
 header {
     grid-area: header;
 }
-
-
-
 aside {
     grid-area: aside;
 }
-
 footer {
     grid-area: footer;
 }

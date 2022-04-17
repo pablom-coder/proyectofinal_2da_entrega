@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../scss/style.css">
     <title>Soluciones en Ingeniería - Contactenos</title>
-    <meta name="description" content="Informacion de contacto de Ingeniería en Soluciones. Si buscas soluciones de ingenieria, arquitectura y/o contruccion ingresa aqui y envianos un mensaje facilmente.">
+    <meta name="description"
+        content="Informacion de contacto de Ingeniería en Soluciones. Si buscas soluciones de ingenieria, arquitectura y/o contruccion ingresa aqui y envianos un mensaje facilmente.">
 </head>
 
 <body class="contenedor-contacto">
@@ -32,7 +33,7 @@
                         <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="./proyectos.html">Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-                    </ul>   
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -53,55 +54,70 @@
                 <div class="col-sm-12 col-md-8">
                     <section id="contacto" class="border">
 
-                        <h1 class="h5 p-2">COMPLETE EL FORMULARIO</h1>
-                        <h3 class=" h6 p-2">Envíe un correo electrónico o complete el siguiente formulario para
+                        <h1 class="h5 p-4">COMPLETE EL FORMULARIO</h1>
+                        <h3 class=" h6 p-1">Envíe un correo electrónico o complete el siguiente formulario para
                             contactarnos.</h3>
-                        <form id="form">
+                        <form id="form" class="p-4">
                             <!-- Nombre -->
-                            <p>
-                                <input type="text" name="nombre" placeholder="Indique su nombre" id="nombre" required>
-                            </p>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <p class="h6">
+                                        <input type="text" name="nombre" placeholder="Indique su nombre" id="nombre"
+                                            required>
+                                    </p>
+                                </div>
 
-                            <!-- Email -->
-                            <p>
-                                <input type="email" name="correo" placeholder="Su email" id="correo" required>
-                            </p>
-                            <!-- Teléfono -->
-                            <p>
-                                <input type="email" name="correo" placeholder="Su teléfono" id="correo" required>
-                            </p>
-                            <!--estado-->
-                            <p>
-                                <select name="estado">
-                                    <option value="1">Soltero/a</option>
-                                    <option value="2">Casado/a</option>
-                                    <option value="3">Divorciado/a</option>
-                                    <option value="4">Viudo/a</option>
-                                </select>
-                            </p>
-                            <p><label>¿Desea recibir el Newsletter?</label><input type="checkbox" name="checkbox"
-                                    id="cbox1">
-                            </p>
+                                <!-- Email -->
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <p class="h6">
+                                        <input type="email" name="correo" placeholder="Su email" id="correo" required>
+                                    </p>
+                                </div>
+                                <!-- Teléfono -->
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <p class="h6">
+                                        <input type="email" name="correo" placeholder="Su teléfono" id="correo"
+                                            required>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <!--estado-->
+                                <div class="col-sm-12 col-md-6">
+                                    <p class="h6">
+                                        <select name="estado">
+                                            <option value="1">Soltero/a</option>
+                                            <option value="2">Casado/a</option>
+                                            <option value="3">Divorciado/a</option>
+                                            <option value="4">Viudo/a</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <p class="h6"><label>¿Desea recibir el Newsletter?</label><input type="checkbox"
+                                            name="checkbox" id="cbox1">
+                                    </p>
+                                </div>
+                            </div>
 
                             <!-- Mensaje -->
-                            <p><label for="mensaje">Ingrese su mensaje:</label> </p>
-                            <textarea name="mensaje" cols="30" rows="10" placeholder="Hola, quisiera info." id='mensaje'
-                                required></textarea><br><br>
+                            <p class="h6"><label for="mensaje">Ingrese su mensaje:</label> </p>
+                            <textarea class="h6" name="mensaje" cols="30" rows="10" placeholder="Hola, quisiera info."
+                                id='mensaje' required></textarea><br><br>
                             <!-- Boton -->
                             <input type="reset" value="Limpiar formulario">
                             <input type="submit" id="button" value="Enviar formulario">
-
-
                         </form>
 
                     </section>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <section id="datos-contacto" class="border">
-                        <h2 class="h5 p-2">DATOS DE CONTACTO</h2>
-                        <h6 class="h6">Caparroz Villada 898 4ºB. CBA</h3>
-                            <h6 class="h6">+54 (0351) 112-9999</h6>
-                            <h6 class="h6">info@solucionesIngenieria.com.ar</h3>
+                        <h2 class="h5 p-4">DATOS DE CONTACTO</h2>
+                        <h6 class="h6 p-2">Caparroz Villada 898 4ºB. CBA</h6>
+                        <h6 class="h6 p-2">+54 (0351) 112-9999</h6>
+                        <h6 class="h6 p-2">info@solucionesIngenieria.com.ar</h6>
                     </section>
                 </div>
             </div>

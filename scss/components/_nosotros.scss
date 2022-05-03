@@ -1,78 +1,65 @@
-.contenedor-nosotros{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 0.5fr 3fr 0.2fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";        
-    }   
-    header{
-        grid-area: header;
-    }
+.contenedor-nosotros {
 
     .main-nosotros {
-        grid-area: main;
-        .titulo-nosotros{
-            font-size: 20px;
+
+        .titulo-nosotros {
+            font-size: 24px;
             padding: 10px 0px 10px 120px;
+            text-align: center;
+            color: #393939;
+            font-weight: bold;
         }
 
-        .agrupa-nosotros{
-            display: map-get($variables-disenio,d-flex);
-            .nosotros {                 
-                display: map-get($variables-disenio,d-flex);
-                flex:2 1 60%;
+        .agrupa-nosotros {
+            display: map-get($variables-disenio, d-flex);
+
+            .nosotros {
+                display: map-get($variables-disenio, d-flex);
+                flex: 2 1 60%;
                 flex-direction: column;
-                padding: 20px 0px 0px 120px;
-                .nosotros img{
-                    height: 50%;
-                    width: 80%; 
+                padding: 20px 0px 0px 20px;
+
+                .fondo_nosotros {
+                    height: 100%;
+                    width: 100%;
                     border: 3px solid gray;
                 }
+
                 p {
-                    @include p_h3(16px,2,300);
-                    text-align:map-get($variables-disenio , tl-align);
+                    @include p_h3(16px, 2, 100);
+                    text-align: map-get($variables-disenio, ta-align);
                     margin-bottom: 1em;
-                    padding-left: 40px;                    
+                    padding-left: 10px;
+
                 }
             }
-            .areas-proyecto{
+
+            .areas-proyecto {
                 display: flex;
                 flex: 1 1 40%;
                 flex-direction: column;
-                padding-top: 50px;
-                padding-left: 10px;
+                padding-top: 20px;
+                padding-left: 40px;
             }
-                h2{
-                    text-align: left;
-                }                
-                    p {
-                        @include p_h3(16px,0,300);
-                        text-align:map-get($variables-disenio , tl-align);
-                        margin-bottom: 1em;
-                        padding-left: 40px;
-                        padding: 20px 20px 0px 20px;
-                    }                                              
+
+            h2 {
+                text-align: left;  
+                color: #393939;
+                font-size: 20px;              
+            }
+
+            p {
+                @include p_h3(16px, 0, 300);
+                text-align: map-get($variables-disenio, tl-align);
+                margin-bottom: 1em;
+                padding-left: 40px;
+                padding: 20px 20px 0px 20px;
+            }
         }
     }
+}
 
-    footer {
-        grid-area: footer;
-    }
+    // footer {
 
-    @media screen and (max-width:480px){
-        .agrupa-nosotros{            
-            display: map-get($variables-disenio,d-flex);
-            flex-direction: column;                    
-        }
-    }
-        
-
-        
-        
-            
-
-           
-
-        
+    //     width: 100%;
+    // }

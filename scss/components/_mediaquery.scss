@@ -1,0 +1,278 @@
+@media screen and (max-width:1230px) {
+    .contenedor-index {
+        .main_index {
+            .construcciones {
+                .construccion {
+                    .contruccion_img {
+                        width: 280px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .contenedor-contacto {
+        .texto_contacto {
+            font-size: 18px;
+        }
+
+        .grupo_contacto {
+            justify-content: space-between;
+            padding-left: 20px;
+
+            .container_contacto {
+                width: 50%;
+                height: auto;
+
+                .form__top {
+                    .texto_formulario {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:860px) {
+    .contenedor-index {
+        .main_index {
+            .inicio {
+                width: 100%;
+                height: 250px;
+
+                .index_img {
+                    width: 100%;
+                    height: 250px;
+                }
+            }
+
+            .titulo_index {
+                h1 {
+                    font-size: 16px;
+                }
+            }
+
+            .texto_index {
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .titulo2_index {
+                h2 {
+                    font-size: 14px;
+                }
+            }
+
+            .construcciones {
+                .construccion {
+
+                    // width: 100%;
+                    .contruccion_img {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:669px) {
+    .contenedor_servicios {
+        .main-servicios {
+            .container-card {
+                // display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                margin: 15px;
+                width: 80%;
+            }
+
+            .card .contenido-card li {
+                line-height: 1.2;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:670px) and (max-width:768px) {
+    .main-servicios {
+        .container-card {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            margin: 15px;
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width:640px) {
+    .contenedor-contacto {
+        .texto_contacto {
+            font-size: 18px;
+        }
+
+        .grupo_contacto {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 10px;
+
+            .container_contacto {
+                width: 80%;
+                height: auto;
+
+                .form__top {
+                    .texto_formulario {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .cont_inf_redes {
+                padding-top: 10px;
+
+                .informacion_contacto {
+                    .inf_contacto_titulo {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                .redes_sociales {
+
+                    .facebook,
+                    .twitter,
+                    .instagram,
+                    .youtube {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-nosotros {
+        .agrupa-nosotros {
+            display: map-get($variables-disenio, d-flex);
+            flex-direction: column;
+        }
+
+        .areas-proyecto {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    footer {
+        // height: 200px;
+        .contenedor-footer {
+            flex-direction: column;
+            border: none;
+            
+            .content-foo {
+                margin-bottom: 20px;
+                text-align: center;
+                .encabezado_footer {
+                    border: none;
+                }
+                .texto_footer {
+                    color: #ccc;
+                    border-bottom: 1px solid #f2f2f2;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        .titulo-footer {
+            font-size: 20px;
+        }
+    }
+
+    /* Proyectos */
+    .contenedor-proyectos {
+        .titulo_proyecto {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {    
+
+    /* Proyectos */
+    .contenedor-proyectos {
+        .titulo_proyecto {
+            font-size: 20px;
+        }
+    }
+
+    /* index */
+    .contenedor-index {
+
+        // display: map-get($variables-disenio, d-flex);
+        // flex-direction: column;        
+        .main_index {
+            .inicio {
+                width: 100%;
+                height: 300px;
+
+                .index_img {
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+
+            .titulo_index {
+                h1 {
+                    font-size: 16px;
+                }
+            }
+
+            .texto_index {
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .titulo2_index {
+                h2 {
+                    font-size: 14px;
+                }
+            }
+
+            .construcciones {
+                padding: 10px 0px;
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+                margin-bottom: 10px;
+
+                .construccion {
+                    padding: 10px 0px;
+
+                    .contruccion_img {
+                        width: 300px;
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
